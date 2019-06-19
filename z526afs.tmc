@@ -1,30 +1,30 @@
 ﻿<[file][][]
     <[object][][]
         <[int][Version][210]>
-        <[vec32array][ContactSpheres][ (-0.0536 0.8839 -1.1294 0.21) (-0.0536 -0.8839 -1.1294 0.21) (-4.3921 0.0000 -0.2895 0.134) ]>
+        <[vec32array][ContactSpheres][ (-0.0536 0.8839 -1.1294 0.21) (-0.0536 -0.8839 -1.1294 0.21) (-4.3921 0.0 -0.2895 0.134) ]>
         <[string8][DisplayName][Zlin 526 AFS]>
         <[string8][DescriptionTextEN][Zlin 526 AFS Akrobat Special is a Czech sports plane used in aerobatics. The Z-526 was originally designed by Zlin Aircraft in 1959. 
 Made by Krzysztof Kaniewski. 3D Design: Ivan Smilauer.]>
 		<[float64][WingSpan][8.8]>
-		<[float64][Mass][659]>
+		<[float64][Mass][839.8]>
 		<[float64][MaximumSpeed][82.5]>
 		<[float64][MinimumSpeed][19.0]>
-        <[float64][ApproachSpeed][33.3]>
-        <[float64][CruiseSpeed]  [99.5]>
+        <[float64][ApproachSpeed][21.0]>
+        <[float64][CruiseSpeed]  [56.0]>
 		<[tmvector2d][NormalSpeedRange][ 19.0 62.0 ]>
 		<[tmvector2d][CautionSpeedRange][ 62.0 82.5 ]>
 		<[tmvector2d][FlapSpeedRange][ 0.0 0.0 ]>
-        <[float64][MaximumAltitude][4715.0]>
+        <[float64][MaximumAltitude][5000.0]>
         <[float64][CruiseAltitude] [1826.0]>
-        <[float64][QSpan][5.0]>
-        <[float64][QMass][299.0]>
-        <[float64][QSpeed][130.0]>
-        <[float64][QPower][0.0]>
-        <[float64][QThrust][1100.0]>
-        <[float64][QRange][1504000.0]>
+        <[float64][QSpan][8.8]>
+        <[float64][QMass][940.0]>
+        <[float64][QSpeed][82.5]>
+        <[float64][QPower][120000.0]>
+        <[float64][QThrust][0.0]>
+        <[float64][QRange][610000.0]>
         <[float64][QRatio][0.0]>
-        <[float64][QBuild][130]>
-        <[float64][QVirgin][1971]>
+        <[float64][QBuild][1400]>
+        <[float64][QVirgin][1959]>
 		<[bool][Airplane][true]>
 		<[bool][Aerobatic][true]>
 		<[bool][Retracts][true]>
