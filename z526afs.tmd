@@ -1008,7 +1008,9 @@
             >
 
             // Engine
-
+			// Walter Minor 6-III 6-cylinder air-cooled inverted in-line piston engine, 
+			// 120 kW (160 hp)
+			
             <[engine][Engine][]
                 <[string8][ThrottleControl][ServoThrottle.Output]>
                 <[string8][RotationSpeed][DriveShaft.RotationSpeed]>
@@ -1019,13 +1021,13 @@
                 <[float64][Friction][70.0]>
                 <[float64][RatedRotationSpeed][275.0]>
                 <[float64][RatedPower][134226]>
-                <[float64][Displacement][0.002420]>
+                <[float64][Displacement][0.006]>
             >
             <[output][RotationSpeed][]
                 <[string8][Input][DriveShaft.GetRotationSpeed]>
             >
             <[product][NormalizedPropellerSpeed][]
-                <[string8][Inputs][ DriveShaft.RotationSpeed 0.00333 ]>
+                <[string8][Inputs][ DriveShaft.RotationSpeed 0.003636 ]>
             >
             <[sender][SenderPower][]
                 <[string8][Input][NormalizedPropellerSpeed.Output]>
