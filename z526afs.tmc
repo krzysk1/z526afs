@@ -17,6 +17,6 @@
         <[float64][EnginePower][120000.0]>
         <[float64][MaximumRange][610000.0]>
         <[uint][UnitsBuilt][1400]>
-        <[uint][EngineCount][0]>        <[uint][Year][1959]>        <[string8][Tags][ airplane general_aviation aerobatic piston gear tailgear retractable_gear ]>        <[string8][Pilot][]>		
+        <[uint][EngineCount][0]>        <[uint][Year][1959]>        <[string8][Tags][ airplane general_aviation aerobatic piston gear tailgear retractable_gear ]>        <[string8][Pilot][pilot_jason]>		
     >
 >
