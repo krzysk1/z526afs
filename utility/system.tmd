@@ -1,0 +1,35 @@
+<[file][][]
+    <[modelmanager][][]
+        <[pointer_list_tmgraphics][DynamicObjects][]
+
+        >
+        <[pointer_list_tmgraphics][GraphicObjects][]
+
+			// zrcatko and tanks only version Z526 AFS-V
+
+            <[rigidbodygraphics][zrcatko_252_10][]
+                <[string8][GeometryList][ Zrcatko10 Zrcatko25210 ]>
+                <[uint32][PositionID][Fuselage.R]>
+                <[uint32][OrientationID][Fuselage.Q]>
+            >
+            <[rigidbodygraphics][tank_L][]
+                <[string8][GeometryList][ TankL TankMountL ]>
+                <[uint32][PositionID][LeftWing2.R]>
+                <[uint32][OrientationID][LeftWing2.Q]>
+            >
+            <[rigidbodygraphics][tank_R][]
+                <[string8][GeometryList][ TankR TankMountR ]>
+                <[uint32][PositionID][RightWing2.R]>
+                <[uint32][OrientationID][RightWing2.Q]>
+            >			
+        >
+    >
+>
+
+
+
+
+
+
+
+

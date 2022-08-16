@@ -588,20 +588,20 @@
 
             // Control Inputs
 
-            <[input_lever][ThrottleInput][]
+            <[input_lever][Throttle1Input][]
                 <[string8][Message][Controls.Throttle1]>
             >
             <[sender][SenderThrottlePosition][]
-                <[string8][Input][ThrottleInput.Output]>
+                <[string8][Input][Throttle1Input.Output]>
                 <[string8][Message][Aircraft.Throttle]>
             >
-            <[input_lever][MixtureInput][]
+            <[input_lever][Mixture1Input][]
                 <[tmvector2d][Range][ 0.0 1.0 ]>
                 <[uint][Positions][41]>
                 <[float64][Value][1.0]>
                 <[string8][Message][Controls.Mixture1]>
             >
-            <[input_lever][PropSpeedInput][]
+            <[input_lever][PropSpeed1Input][]
                 <[tmvector2d][Range][ 0.0 1.0 ]>
                 <[uint][Positions][41]>
                 <[float64][Value][1.0]>
@@ -844,7 +844,7 @@
                 <[string8][Input][ServoRudderTrim.Output]>
             >
             <[servoclassic][ServoThrottle][]
-                <[string8][Input][ThrottleInput.Output]>
+                <[string8][Input][Throttle1Input.Output]>
                 <[float64][Speed][5.0]>
                 <[float64][P0][0.0]>
                 <[float64][P1][1.0]>
@@ -853,7 +853,7 @@
                 <[string8][Input][ServoThrottle.Output]>
             >
             <[servoclassic][ServoMixture][]
-                <[string8][Input][MixtureInput.Output]>
+                <[string8][Input][Mixture1Input.Output]>
                 <[float64][Speed][5.0]>
                 <[float64][P0][0.0]>
                 <[float64][P1][1.0]>
@@ -862,7 +862,7 @@
                 <[string8][Input][ServoMixture.Output]>
             >
             <[servoclassic][ServoPropRPM][]
-                <[string8][Input][PropSpeedInput.Output]>
+                <[string8][Input][PropSpeed1Input.Output]>
                 <[float64][Speed][5.0]>
                 <[float64][P0][0.0]>
                 <[float64][P1][1.0]>
@@ -871,7 +871,7 @@
                 <[string8][Input][ServoPropRPM.Output]>
             >
             <[servolinear][ServoPropSpeed][]
-                <[string8][Input][PropSpeedInput.Output]>
+                <[string8][Input][PropSpeed1Input.Output]>
                 <[float64][OutputSpeed][100]>
                 <[float64][Position][283.5]>
                 <[float64array][InputPosition][  0.0 1.0 ]>
@@ -1551,24 +1551,6 @@
                 <[string8][GeometryList][ Z526afsCockpit213337 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
-            >
-
-			// zrcatko and tanks only version Z526 AFS-V
-
-            <[rigidbodygraphics][zrcatko_252_10][]
-                <[string8][GeometryList][ Zrcatko10 Zrcatko25210 ]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][OrientationID][Fuselage.Q]>
-            >
-            <[rigidbodygraphics][tank_L][]
-                <[string8][GeometryList][ TankL TankMountL ]>
-                <[uint32][PositionID][LeftWing2.R]>
-                <[uint32][OrientationID][LeftWing2.Q]>
-            >
-            <[rigidbodygraphics][tank_R][]
-                <[string8][GeometryList][ TankR TankMountR ]>
-                <[uint32][PositionID][RightWing2.R]>
-                <[uint32][OrientationID][RightWing2.Q]>
             >
         >
         <[pointer_list_tmsound][SoundObjects][]

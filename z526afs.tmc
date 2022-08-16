@@ -1,7 +1,7 @@
 <[file][][]    <[object][][]
         <[int][Version][220]>        <[vec32array][ContactSpheres][ (-0.0536 0.8839 -1.1294 0.21) (-0.0536 -0.8839 -1.1294 0.21) (-4.3921 0.0 -0.2895 0.134) ]>
-        <[string8][ICAO][Z26]>        <[string8][DisplayName][Z-526 Akrobat]>
-        <[string8][DisplayNameFull][Zlin Z-526 Akrobat]>
+        <[string8][ICAO][Z26]>        <[string8][DisplayName][Z-526 AFS]>
+        <[string8][DisplayNameFull][Zlin Z 526 AFS-V]>
         <[localized_text_list][Descriptions][]            <[localized_text][][]                <[string8][Language][en]>                <[string8][Text][Zlin 526 AFS Akrobat Special is a Czech sports plane used in aerobatics. The Z-526 was originally designed by Zlin Aircraft in 1959. Made by Krzysztof Kaniewski. 3D Design: Ivan Smilauer.]>            >
         >		<[float64][WingSpan][8.8]>
 		<[float64][MaximumAirspeed][82.5]>
@@ -17,6 +17,6 @@
         <[float64][EnginePower][120000.0]>
         <[float64][MaximumRange][610000.0]>
         <[uint][UnitsBuilt][1400]>
-        <[uint][EngineCount][0]>        <[uint][Year][1959]>        <[string8][Tags][ airplane general_aviation aerobatic piston gear tailgear ]>        <[string8][Pilot][]>		
+        <[uint][EngineCount][0]>        <[uint][Year][1959]>        <[string8][Tags][ airplane general_aviation aerobatic piston gear tailgear retractable_gear ]>        <[string8][Pilot][]>		
     >
 >
