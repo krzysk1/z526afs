@@ -1,0 +1,28 @@
+<[file][][]
+    <[hints][][]
+        // Extra 330 SC
+        <[float64][MaximumTakeOffMass][780.0]>
+        <[float64][WingSpan][7.5]>
+        <[float64][WingArea][9.81]>
+        <[float64][HeightOffset][-1.072]>
+        <[float64][ApproachSpeed][40.5]>
+        <[float64][PatternSpeed][46.9]>
+        <[float64][InitialClimbSpeed][43.0]>
+        <[int][EngineCount][1]>
+        <[bool][Piston][true]>
+        <[bool][GeneralAviation][true]>
+        <[bool][Aerobatic][true]>
+        <[bool][TailDragger][true]>
+        <[float64][ElevatorGain][0.1]>
+        <[float64][AileronGain][0.1]>
+        <[float64][RudderGain][0.2]>
+        <[float64][RudderSteeringGain][0.2]>
+        <[float64][RudderCrossWind][2.5]>
+        <[float64][RudderTakeOff][0.02]>
+        <[float64][FlareHeightScaling][0.7]>
+        <[float64][FlareExpectedNoseDrop][1.0]>
+        <[float64][StarterMaximumTime][3.0]>
+        <[float64][RotationSpeedNormalizedClimb] [0.9259]>
+        <[float64][RotationSpeedNormalizedCruise][0.9259]>
+    >
+>
