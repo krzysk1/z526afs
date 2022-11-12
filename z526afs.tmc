@@ -1,9 +1,21 @@
-<[file][][]    <[object][][]
-        <[int][Version][220]>        <[vec32array][ContactSpheres][ (-0.0536 0.8839 -1.1294 0.21) (-0.0536 -0.8839 -1.1294 0.21) (-4.3921 0.0 -0.2895 0.134) ]>
-        <[string8][ICAO][Z26]>        <[string8][DisplayName][Z-526 AFS]>
+<[file][][]
+    <[object][][]
+        <[int][Version][220]>
+        <[vec32array][ContactSpheres][ (-0.0536 0.8839 -1.1294 0.21) (-0.0536 -0.8839 -1.1294 0.21) (-4.3921 0.0 -0.2895 0.134) ]>
+        <[string8][ICAO][Z26]>
+        <[string8][DisplayName][Z-526 AFS]>
         <[string8][DisplayNameFull][Zlin Z 526 AFS-V]>
-        <[localized_text_list][Descriptions][]            <[localized_text][][]                <[string8][Language][en]>                <[string8][Text][Zlin 526 AFS Akrobat Special is a Czech sports plane used in aerobatics. The Z-526 was originally designed by Zlin Aircraft in 1959. Made by Krzysztof Kaniewski. 3D Design: Ivan Smilauer.]>            >
-        >		<[float64][WingSpan][8.8]>
+        <[localized_text_list][Descriptions][]
+            <[localized_text][][]
+                <[string8][Language][en]>
+                <[string8][Text][The Zlin 526 AFS Akrobat Special is a Czech sports plane used in aerobatics. The Z-526 was originally designed by Zlin Aircraft in 1959. Made by Krzysztof Kaniewski. 3D Design: Ivan Smilauer.]>
+            >
+            <[localized_text][][]
+                <[string8][Language][de]>
+                <[string8][Text][Die Zlín Z-526 ist ein tschechoslowakisches Sport- und Kunstflugzeug der Trenér-Reihe. Die zweisitzigen Ausführungen tragen den Beinamen Trenér Master, die einsitzigen werden als Akrobat und Akrobat Spezial bezeichnet. Bekannt wurde die Z-526 durch den Gewinn der Kunstflug-Weltmeisterschaft 1968 in der Einzel- (Erwin Bläske, DDR) und Mannschaftswertung (DDR). Für Aerofly FS4 von Krzysztof Kaniewski. 3d-Modell erstellt von Ivan Smilauer.]>
+			>
+        >
+		<[float64][WingSpan][8.84]>
 		<[float64][MaximumAirspeed][82.5]>
 		<[float64][MinimumAirspeed][19.0]>
         <[float64][ApproachAirspeed][21.0]>
@@ -11,12 +23,15 @@
 		<[tmvector2d][NormalAirspeedRange][ 19.0 62.0 ]>
 		<[tmvector2d][CautionAirspeedRange][ 62.0 82.5 ]>
 		<[tmvector2d][FlapAirspeedRange][ 0.0 0.0 ]>
-        <[float64][MaximumAltitude][5000.0]>
+        <[float64][MaximumAltitude][5800.0]>
         <[float64][CruiseAltitude] [1826.0]>
-        <[float64][MaximumTakeoffMass][940.0]>
+        <[float64][MaximumTakeoffMass][940.0]>  // 740 for acro
         <[float64][EnginePower][120000.0]>
-        <[float64][MaximumRange][610000.0]>
+        <[float64][MaximumRange][750000.0]>
         <[uint][UnitsBuilt][1400]>
-        <[uint][EngineCount][0]>        <[uint][Year][1959]>        <[string8][Tags][ airplane general_aviation aerobatic piston gear tailgear retractable_gear ]>        <[string8][Pilot][pilot_jason]>		
+        <[uint][EngineCount][1]>
+        <[uint][Year][1959]>
+        <[string8][Tags][ airplane general_aviation aerobatic piston tailgear retractable_gear ]>
+        <[string8][Pilot][pilot_jason]>
     >
 >
