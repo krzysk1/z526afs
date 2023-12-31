@@ -3,7 +3,9 @@
 	//-------------------------------------
 	// Plane: Zlin 526 AFS-V Akrobat Special
 	// Compilation: Krzysztof Kaniewski
-	// 3D Design: Ivan Smilauer
+	// 3D Design: 2011 Ivan Smilauer (XP)
+	// Aircraft files are freeware in the sense that you are free to download, copy and redistribute them for personal and non-commercial purposes, provided that this copyright notice is retained in the copy. 
+	// You are not allowed to use these files or parts thereof in a commercial product without the author(s) consent.
 	// Date: Sun Aug 10 2014; June 2019; Aug 2020
 	//-------------------------------------
 
@@ -22,39 +24,55 @@
                 <[tmvector3d][Direction][1.0 0.0 0.0]>
             >
             <[camera_head][CameraPilot][]
-                <[string8][Tags][Pilot]>
                 <[string8][Body][Fuselage]>
                 <[tmvector3d][R0][ -1.5179 0.0 0.5730 ]>
                 <[tmvector3d][Direction][ 1.0 0.0 0.0 ]>
-                <[float64][Kf][40.0]>
-                <[float64][Df][1.0]>
-                <[float64][Kt][0.04]>
+                <[float64][Kf][60.0]>
+                <[float64][Df][1.00]>
+                <[float64][Kt][0.08]>
                 <[float64][Dt][0.02]>
                 <[bool][InCockpit][true]>
+                <[string8][Tags][cockpit pilot rear]>
             >
-            <[camera][CameraLeftWing][]
-                <[string8][Tags][Left]>
+            <[camera][CameraCockpitOutside][]
                 <[string8][Body][Fuselage]>
-                <[tmvector3d][R0][ 0.8321 4.4168 -0.2774 ]>
-                <[tmvector3d][Direction][ -0.3520 -0.9342 0.0587 ]>
+                <[tmvector3d][R0][ -2.2 -2.0 2.4 ]>
+                <[tmvector3d][Direction][ 0.6 0.6 -0.6 ]>
+                <[bool][InCockpit][false]>
+                <[string8][Tags][cockpit outside]>
             >
-            <[camera][CameraRightWing][]
-                <[string8][Tags][Right]>
+            <[camera][CameraGearView][]
                 <[string8][Body][Fuselage]>
-                <[tmvector3d][R0][ -5.3190 -4.4168 1.4638 ]>
-                <[tmvector3d][Direction][ 0.6941 0.6833 -0.2265 ]>
+                <[tmvector3d][R0][ -3.818578 0.745445 -0.114652 ]>
+                <[tmvector3d][Direction][ 1.0 0.0 -0.1 ]>
+                <[bool][InCockpit][true]>
+                <[string8][Tags][gear]>
             >
-            <[camera][CameraNose][]
-                <[string8][Tags][Nose]>
+            <[camera][CameraStabilizer][]
                 <[string8][Body][Fuselage]>
-                <[tmvector3d][R0][ 2.8321 0.4161 0.4161 ]>
-                <[tmvector3d][Direction][ -0.9874 -0.1121 -0.1121 ]>
+                <[tmvector3d][R0][ -3.822668 0.0 1.486062 ]>
+                <[tmvector3d][Direction][ 0.95 0.0 -0.3 ]>
+                <[float64][Cone][-0.1]>
+                <[bool][InCockpit][false]>
+                <[string8][Tags][tail stabilizer]>
             >
-            <[camera][CameraTail][]
-                <[string8][Tags][Tail]>
-                <[string8][Body][Fuselage]>
-                <[tmvector3d][R0][ -6.3190 0.0 2.4397 ]>
-                <[tmvector3d][Direction][ 0.9137 0.0 -0.4063 ]>
+            <[camera][CameraLeftFuselageView][]
+                <[string8][Body][LeftWing]>
+                <[tmvector3d][R0][ -0.25 4.0 0.2 ]>
+                <[tmvector3d][X0][ 0.0 -1.0 0.0 ]>
+                <[tmvector3d][Direction][ 0.0 -1.0 -0.1 ]>
+                <[float64][Cone][0.0]>
+                <[bool][InCockpit][true]>
+                <[string8][Tags][fuselage wing left]>
+            >
+            <[camera][CameraRightFuselageView][]
+                <[string8][Body][RightWing]>
+                <[tmvector3d][R0][ -0.25 -4.0 0.2 ]>
+                <[tmvector3d][X0][ 0.0 1.0 0.0 ]>
+                <[tmvector3d][Direction][ 0.0 1.0 -0.1 ]>
+                <[float64][Cone][0.0]>
+                <[bool][InCockpit][true]>
+                <[string8][Tags][fuselage wing right]>
             >
 
             // Rigidbodies mass: 658.0 ( -0.736 0.000 -0.140)
@@ -170,6 +188,9 @@
                 <[string8][Geometry][Aircraft42540]>
                 <[float64][K][1836000]>
                 <[float64][D][18360]>
+                <[float64][StaticFrictionCoefficient][2.0]>
+                <[float64][KineticFrictionCoefficient][0.7]>
+                <[bool][InstantCrash][true]>
             >
             <[collisionhull][CollisionLeftWing][]
                 <[string8][Body][LeftWing]>
@@ -1584,6 +1605,32 @@
                 <[uint32][OrientationID][Fuselage.Q]>
             >
 
+			// Aerobatic Sheet
+           <[graphics_input][AerobaticSheetSwitch][]
+                <[uint32][InputID][AerobaticSheetSwitch.Output]>
+                <[float64][Scaling][-1.0]>
+                <[string8][Offset][0.0]>			//1 dla działającego	
+            >
+            <[graphics_translation][AerobaticSheetTransform][]
+                <[string8][Input][AerobaticSheetSwitch.Output]>
+                <[tmvector3d][Axis][ 0.707 0.0 -0.707 ]>
+            >
+            <[graphics_input][AerobaticSheetZoom][]
+                <[uint32][InputID][AerobaticSheetZoom.Output]>
+                <[float64][Scaling][0.06]>				
+            >
+            <[graphics_translation][AerobaticSheetZoomTransform][]
+                <[string8][Input][AerobaticSheetZoom.Output]>
+                <[tmvector3d][Axis][ -1.0 0.0 0.4 ]>
+                <[string8][InputTransform][AerobaticSheetTransform.Output]>				
+            >			
+            <[rigidbodygraphics][AerobaticSheet][]
+                <[string8][GeometryList][ Sequence Tape ]>
+                <[uint32][PositionID][Fuselage.R]>
+                <[uint32][OrientationID][Fuselage.Q]>
+                <[string8][InputTransform][AerobaticSheetZoomTransform.Output]>
+            >
+
             // pilot translation
 
             <[graphics_product][ThrottleInput][]
@@ -1623,7 +1670,7 @@
                 <[string8][GeometryList][ PilotBody PilotHead HeadsetLower HeadsetUpper ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
-                <[uint32][ShowInside][CameraPassenger]>
+                <[uint32][ShowInside][CameraCockpitOutside CameraStabilizer CameraLeftFuselageView CameraRightFuselageView]>
                 <[bone_array][Bones][]
                  <[bone][element][0]
                      <[string8][Name][Bip01]>
@@ -3640,6 +3687,7 @@
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][VelocityID][Fuselage.V]>
                 <[string8][SoundFile][star1.wav]>
+                <[tmvector3d][R0][1.6 0.0 0.0]>				
             >
             // engine loop
             <[soundinput][RotationSpeed][]
@@ -3658,16 +3706,18 @@
                 <[string8][InputPitch][RPMPitchRun.Output]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][VelocityID][Fuselage.V]>
-               <[string8][SoundFile][engn1_inn.wav]>
+                <[string8][SoundFile][engn1_inn.wav]>
                 <[bool][External][false]>
+                <[tmvector3d][R0][1.6 0.0 0.0]>				
             >
             <[soundloop][RPMRunLoopExternal][]
                 <[string8][InputVolume][RPMVolumeRun.Output]>
                 <[string8][InputPitch][RPMPitchRun.Output]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][VelocityID][Fuselage.V]>
-               <[string8][SoundFile][engn1_out.wav]>
+                <[string8][SoundFile][engn1_out.wav]>
                 <[bool][Internal][false]>
+                <[tmvector3d][R0][1.6 0.0 0.0]>				
             >
 			//wheels
             <[soundinput][GroundRollLoadLeft][]
