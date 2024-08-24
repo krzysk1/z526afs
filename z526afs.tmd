@@ -43,14 +43,14 @@
             >
             <[camera][CameraGearView][]
                 <[string8][Body][Fuselage]>
-                <[tmvector3d][R0][ -3.818578 0.745445 -0.114652 ]>
+                <[tmvector3d][R0][ -3.81 0.74 -0.11 ]>
                 <[tmvector3d][Direction][ 1.0 0.0 -0.1 ]>
                 <[bool][InCockpit][true]>
                 <[string8][Tags][gear]>
             >
             <[camera][CameraStabilizer][]
                 <[string8][Body][Fuselage]>
-                <[tmvector3d][R0][ -3.822668 0.0 1.486062 ]>
+                <[tmvector3d][R0][ -3.82 0.0 1.48 ]>
                 <[tmvector3d][Direction][ 0.95 0.0 -0.3 ]>
                 <[float64][Cone][-0.1]>
                 <[bool][InCockpit][false]>

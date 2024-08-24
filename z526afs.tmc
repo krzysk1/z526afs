@@ -3,8 +3,8 @@
         <[int][Version][220]>
         <[vec32array][ContactSpheres][ (-0.0536 0.8839 -1.1294 0.21) (-0.0536 -0.8839 -1.1294 0.21) (-4.3921 0.0 -0.2895 0.134) ]>
         <[string8][ICAO][Z26]>
-        <[string8][DisplayName][Z-526 AFS]>
-        <[string8][DisplayNameFull][Zlin Z 526 AFS-V]>
+        <[string8][DisplayName][Zlin 526 AFS]>
+        <[string8][DisplayNameFull][Zlin Z-526 AFS-V]>
         <[localized_text_list][Descriptions][]
             <[localized_text][][]
                 <[string8][Language][en]>
