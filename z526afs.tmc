@@ -1,18 +1,22 @@
 <[file][][]
-    <[object][][]
-        <[int][Version][220]>
-        <[vec32array][ContactSpheres][ (-0.0536 0.8839 -1.1294 0.21) (-0.0536 -0.8839 -1.1294 0.21) (-4.3921 0.0 -0.2895 0.134) ]>
-        <[string8][ICAO][Z26]>
+    <[modelinformation][][]
+        <[int32][Version][220]>
+        <[list_vector4_float64][ContactSpheres][ (-0.0536 0.8839 -1.1294 0.21) (-0.0536 -0.8839 -1.1294 0.21) (-4.3921 0.0 -0.2895 0.134) ]>
+        <[stringt8c][ICAO][Z26]>
         <[string8][DisplayName][Zlin 526 AFS]>
         <[string8][DisplayNameFull][Zlin Z-526 AFS-V]>
-        <[localized_text_list][Descriptions][]
-            <[localized_text][][]
+        <[list_localized_text][Descriptions][]
+            <[localized_text][element][0]
                 <[string8][Language][en]>
                 <[string8][Text][The Zlin 526 AFS Akrobat Special is a Czech sports plane used in aerobatics. The Z-526 was originally designed by Zlin Aircraft in 1959. Made by Krzysztof Kaniewski. 3D Design: Ivan Smilauer.]>
             >
-            <[localized_text][][]
+            <[localized_text][element][1]
                 <[string8][Language][de]>
                 <[string8][Text][Die Zlín Z-526 ist ein tschechoslowakisches Sport- und Kunstflugzeug der Trenér-Reihe. Die zweisitzigen Ausführungen tragen den Beinamen Trenér Master, die einsitzigen werden als Akrobat und Akrobat Spezial bezeichnet. Bekannt wurde die Z-526 durch den Gewinn der Kunstflug-Weltmeisterschaft 1968 in der Einzel- (Erwin Bläske, DDR) und Mannschaftswertung (DDR). Für Aerofly FS4 von Krzysztof Kaniewski. 3d-Modell erstellt von Ivan Smilauer.]>
+			>
+			<[localized_text][element][2]
+				<[string8u][Language][pl]>
+                <[string8][Text][Zlin Z-526 to czechosłowacki samolot sportowy i akrobacyjny z serii Trener. Wersje dwumiejscowe noszą przydomek Trener Master, wersje jednomiejscowe są znane jako Akrobat i Akrobat Spezial. Z-526 stał się sławny dzięki zwycięstwu w Mistrzostwach Świata w Akrobacji Samolotowej w 1968 r. w konkurencji indywidualnej (Erwin Bläske, NRD) i zespołowej (NRD). Dla Aerofly FS4 autorstwa Krzysztofa Kaniewskiego. Model 3D stworzony przez Ivana Smilauera.]>
 			>
         >
 		<[float64][WingSpan][8.84]>
