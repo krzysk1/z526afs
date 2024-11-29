@@ -1625,7 +1625,7 @@
                 <[string8][InputTransform][AerobaticSheetTransform.Output]>				
             >			
             <[rigidbodygraphics][AerobaticSheet][]
-                <[string8][GeometryList][ Sequence Tape ]>
+       //         <[string8][GeometryList][ Sequence Tape ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][InputTransform][AerobaticSheetZoomTransform.Output]>
