@@ -19,22 +19,21 @@
                 <[string8][Text][Zlin Z-526 to czechosłowacki samolot sportowy i akrobacyjny z serii Trener. Wersje dwumiejscowe noszą przydomek Trener Master, wersje jednomiejscowe są znane jako Akrobat i Akrobat Spezial. Z-526 stał się sławny dzięki zwycięstwu w Mistrzostwach Świata w Akrobacji Samolotowej w 1968 r. w konkurencji indywidualnej (Erwin Bläske, NRD) i zespołowej (NRD). Dla Aerofly FS4 autorstwa Krzysztofa Kaniewskiego. Model 3D stworzony przez Ivana Smilauera.]>
 			>
         >
-		<[float64][WingSpan][8.84]>
-		<[float64][MaximumAirspeed][82.5]>
-		<[float64][MinimumAirspeed][19.0]>
-        <[float64][ApproachAirspeed][21.0]>
-        <[float64][CruiseAirspeed]  [56.0]>
-		<[tmvector2d][NormalAirspeedRange][ 19.0 62.0 ]>
-		<[tmvector2d][CautionAirspeedRange][ 62.0 82.5 ]>
-		<[tmvector2d][FlapAirspeedRange][ 0.0 0.0 ]>
-        <[float64][MaximumAltitude][5800.0]>
-        <[float64][CruiseAltitude] [1826.0]>
-        <[float64][MaximumTakeoffMass][940.0]>  // 740 for acro
-        <[float64][EnginePower][120000.0]>
-        <[float64][MaximumRange][750000.0]>
-        <[uint][UnitsBuilt][1400]>
-        <[uint][EngineCount][1]>
-        <[uint][Year][1959]>
+        <[float64][MaximumTakeoffMass][940.0]>  // 740 for acro		
+		<[float64][WingSpan]          [8.84]>
+        <[uint] [Year]                [1959]>
+        <[uint] [UnitsBuilt]          [1400]>		
+        <[uint] [EngineCount]         [1]>
+        <[float64][EnginePower]       [120000.0]>		
+		<[float64][MaximumAirspeed]   [82.5]>
+		<[float64][MinimumAirspeed]   [19.0]>
+        <[float64][ApproachAirspeed]  [21.0]>
+        <[float64][CruiseAirspeed]    [56.0]>
+        <[float64][MaximumAltitude]   [5800.0]>
+        <[float64][CruiseAltitude]    [1826.0]>
+        <[float64][MaximumRange]      [750000.0]>	
+		<[tmvector2d][NormalAirspeedRange] [ 19.0 62.0 ]>
+		<[tmvector2d][CautionAirspeedRange][ 62.0 82.5 ]>		
         <[string8][Tags][ airplane general_aviation aerobatic piston tailgear retractable_gear ]>
         <[string8][Pilot][pilot_jason]>
     >
