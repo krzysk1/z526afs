@@ -1609,7 +1609,7 @@
            <[graphics_input][AerobaticSheetSwitch][]
                 <[uint32][InputID][AerobaticSheetSwitch.Output]>
                 <[float64][Scaling][-1.0]>
-                <[string8][Offset][0.0]>			//1 dla działającego	
+                <[string8][Offset][2.0]>			//1 dla działającego	
             >
             <[graphics_translation][AerobaticSheetTransform][]
                 <[string8][Input][AerobaticSheetSwitch.Output]>
