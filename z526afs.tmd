@@ -1,13 +1,13 @@
 <[file][][]
 
-	//-------------------------------------
-	// Plane: Zlin 526 AFS-V Akrobat Special
-	// Compilation: Krzysztof Kaniewski
-	// 3D Design: 2011 Ivan Smilauer (XP)
-	// Aircraft files are freeware in the sense that you are free to download, copy and redistribute them for personal and non-commercial purposes, provided that this copyright notice is retained in the copy. 
-	// You are not allowed to use these files or parts thereof in a commercial product without the author(s) consent.
-	// Date: Sun Aug 10 2014; June 2019; Aug 2020
-	//-------------------------------------
+    //-------------------------------------
+    // Plane: Zlin 526 AFS-V Akrobat Special
+    // Compilation: Krzysztof Kaniewski
+    // 3D Design: 2011 Ivan Smilauer (XP)
+    // Aircraft files are freeware in the sense that you are free to download, copy and redistribute them for personal and non-commercial purposes, provided that this copyright notice is retained in the copy. 
+    // You are not allowed to use these files or parts thereof in a commercial product without the author(s) consent.
+    // Date: Sun Aug 10 2014; June 2019; Aug 2020
+    //-------------------------------------
 
     <[modelmanager][][]
         <[pointer_list_tmuniverse][DynamicObjects][]
@@ -1039,8 +1039,8 @@
             >
 
             // Engine
-			// Walter Minor 6-III 6-cylinder air-cooled inverted in-line piston engine,
-			// 120 kW (160 hp)
+            // Walter Minor 6-III 6-cylinder air-cooled inverted in-line piston engine,
+            // 120 kW (160 hp)
 
             <[engine][Engine][]
                 <[string8][ThrottleControl][ServoThrottle.Output]>
@@ -1282,7 +1282,7 @@
                 <[tmvector3d][Axis][ 0.0 0.0 -1.0 ]>
                 <[tmvector3d][Pivot][-4.696968 -0.003048 0.335280]>
             >
-			// gears
+            // gears
             <[rigidbodygraphics][LeftGear][]
                 <[string8][GeometryList][ Aircraft117000 ]>
                 <[uint32][PositionID][LeftGear.R]>
@@ -1344,7 +1344,7 @@
                 <[uint32][PositionID][RightGear.R]>
                 <[uint32][OrientationID][RightGear.Q]>
             >
-			// Propeller
+            // Propeller
             <[propellergraphics][Propeller][]
                 <[string8][GeometryList][ Propellerdisk ]>
                 <[uint32][PositionID][Fuselage.R]>
@@ -1380,7 +1380,7 @@
                 <[float64][Radius][0.99974]>
                 <[string8][InputPitch][0.0]>
             >
-			// canopy
+            // canopy
             <[rigidbodygraphics][canopy_1][]
                 <[string8][GeometryList][ Canopy1 Canopy2 ]>
                 <[uint32][PositionID][Fuselage.R]>
@@ -1404,14 +1404,14 @@
                 <[string8][InputTransform][canopyMoving_345.Output]>
             >
 
-			// Cockpit
+            // Cockpit
 
             <[rigidbodygraphics][Cockpit][]
                 <[string8][GeometryList][ Z526afsCockpit7 Z526afsCockpit102037 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
             >
-			//Stick
+            // Stick
             <[graphics_input][CockpitInput_0][]
                 <[uint32][InputID][ServoLeftAileron.Output]>
                 <[float64][Scaling][4.2441]>
@@ -1445,23 +1445,18 @@
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][InputTransform][CockpitRotate_467.Output]>
             >
-			//Throttle
-            <[graphics_input][CockpitInput_2][]
-                <[uint32][InputID][ServoThrottle.Output]>
-            >
-            <[graphics_linear_interpolation][CockpitMapping_473][]
-                <[string8][Input][CockpitInput_2.Output]>
-                <[tmvector2d][Map][(0 0.012392) (1 0.431445)]>
-            >
+            // Throttle lever
             <[hingedbodygraphics][Cockpit_13131_7][]
                 <[string8][GeometryList][ Z526afsCockpit131317 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
-                <[string8][Input][CockpitMapping_473.Output]>
+                <[uint32][InputID][ServoThrottle.Output]>
                 <[tmvector3d][Axis][ 0.0 1.0 0.0 ]>
                 <[tmvector3d][Pivot][-1.2525 0.0063 -0.1907]>
+                <[float64][Scaling][0.419053]>
+                <[float64][Offset][0.012392]>
             >
-			//Mixture
+            // Mixture lever
             <[graphics_input][CockpitInput_3][]
                 <[uint32][InputID][ServoMixture.Output]>
             >
@@ -1476,8 +1471,10 @@
                 <[string8][Input][CockpitMapping_478.Output]>
                 <[tmvector3d][Axis][ 0.0 -1.0 0.0 ]>
                 <[tmvector3d][Pivot][-1.2506 0.0063 -0.2696]>
+                <[float64][Scaling][-0.313112]>
+                <[float64][Offset][0.313112]>
             >
-			//Pedals
+            // Pedals
             <[graphics_input][CockpitInput_4][]
                 <[uint32][InputID][ServoRudder.Output]>
                 <[float64][Scaling][-1.9099]>
@@ -1510,10 +1507,10 @@
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][InputTransform][CockpitMoving_486.Output]>
             >
-			//Rudder trim
+            // Rudder trim
             <[graphics_input][CockpitInput_5][]
                 <[uint32][InputID][ServoRudderTrim.Output]>
-    			<[float64][Scaling][3.8197]>
+                <[float64][Scaling][3.8197]>
             >
             <[graphics_linear_interpolation][CockpitMapping_491][]
                 <[string8][Input][CockpitInput_5.Output]>
@@ -1544,16 +1541,16 @@
                 <[tmvector3d][Pivot][-1.5764 0.2629 -0.0985]>
                 <[string8][InputTransform][CockpitRotate_496.Output]>
             >
-            <[rigidbodygraphics][Cockpit_16119_7][]
+            <[rigidbodygraphics][RudderTrimWheel][]
                 <[string8][GeometryList][ Z526afsCockpit161197 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][InputTransform][CockpitRotate_501.Output]>
             >
-			//Elevator trim
+            // Elevator trim
             <[graphics_input][CockpitInput_6][]
                 <[uint32][InputID][ServoElevatorTrim.Output]>
-    			<[float64][Scaling][2.3873]>
+                <[float64][Scaling][2.3873]>
             >
             <[graphics_linear_interpolation][CockpitMapping_514][]
                 <[string8][Input][CockpitInput_6.Output]>
@@ -1573,7 +1570,7 @@
                 <[string8][Input][CockpitInput_6.Output]>
                 <[tmvector2d][Map][(-0.5 -2.418154)  (0.0 -0.012217) (0.5 2.439971) ]>
             >
-            <[hingedbodygraphics][Cockpit_17145_7][]
+            <[hingedbodygraphics][TrimWheel][]
                 <[string8][GeometryList][ Z526afsCockpit171457 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
@@ -1581,7 +1578,7 @@
                 <[tmvector3d][Axis][ -0.0051 -0.987 0.1607 ]>
                 <[tmvector3d][Pivot][-1.3786 0.2612 -0.0381]>
             >
-			//Canopy
+            // Canopy animation
             <[graphics_input][CockpitInput_7][]
                 <[uint32][InputID][ServoCanopy.Output]>
             >
@@ -1605,11 +1602,11 @@
                 <[uint32][OrientationID][Fuselage.Q]>
             >
 
-			// Aerobatic Sheet
+            // Aerobatic Sheet
            <[graphics_input][AerobaticSheetSwitch][]
                 <[uint32][InputID][AerobaticSheetSwitch.Output]>
                 <[float64][Scaling][-1.0]>
-                <[string8][Offset][2.0]>			//1 dla działającego	
+                <[string8][Offset][2.0]>            //1 dla działającego
             >
             <[graphics_translation][AerobaticSheetTransform][]
                 <[string8][Input][AerobaticSheetSwitch.Output]>
@@ -1617,13 +1614,13 @@
             >
             <[graphics_input][AerobaticSheetZoom][]
                 <[uint32][InputID][AerobaticSheetZoom.Output]>
-                <[float64][Scaling][0.06]>				
+                <[float64][Scaling][0.06]>
             >
             <[graphics_translation][AerobaticSheetZoomTransform][]
                 <[string8][Input][AerobaticSheetZoom.Output]>
                 <[tmvector3d][Axis][ -1.0 0.0 0.4 ]>
-                <[string8][InputTransform][AerobaticSheetTransform.Output]>				
-            >			
+                <[string8][InputTransform][AerobaticSheetTransform.Output]>
+            >
             <[rigidbodygraphics][AerobaticSheet][]
        //         <[string8][GeometryList][ Sequence Tape ]>
                 <[uint32][PositionID][Fuselage.R]>
@@ -1631,8 +1628,10 @@
                 <[string8][InputTransform][AerobaticSheetZoomTransform.Output]>
             >
 
-            // pilot translation
-
+            // pilot animation
+            <[graphics_input][CockpitInput_2][]
+                <[uint32][InputID][ServoThrottle.Output]>
+            >
             <[graphics_product][ThrottleInput][]
                 <[string8][Input0][CockpitInput_2.Output]>
                 <[string8][Input1][1.030]>
@@ -3687,7 +3686,7 @@
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][VelocityID][Fuselage.V]>
                 <[string8][SoundFile][star1.wav]>
-                <[tmvector3d][R0][1.6 0.0 0.0]>				
+                <[tmvector3d][R0][1.6 0.0 0.0]>
             >
             // engine loop
             <[soundinput][RotationSpeed][]
@@ -3708,7 +3707,7 @@
                 <[uint32][VelocityID][Fuselage.V]>
                 <[string8][SoundFile][engn1_inn.wav]>
                 <[bool][External][false]>
-                <[tmvector3d][R0][1.6 0.0 0.0]>				
+                <[tmvector3d][R0][1.6 0.0 0.0]>
             >
             <[soundloop][RPMRunLoopExternal][]
                 <[string8][InputVolume][RPMVolumeRun.Output]>
@@ -3717,9 +3716,9 @@
                 <[uint32][VelocityID][Fuselage.V]>
                 <[string8][SoundFile][engn1_out.wav]>
                 <[bool][Internal][false]>
-                <[tmvector3d][R0][1.6 0.0 0.0]>				
+                <[tmvector3d][R0][1.6 0.0 0.0]>
             >
-			//wheels
+            //wheels
             <[soundinput][GroundRollLoadLeft][]
                 <[uint32][InputID][GroundRollLoadLeft.Output]>
             >
