@@ -32,7 +32,7 @@
                 <[float64][Kt][0.08]>
                 <[float64][Dt][0.02]>
                 <[bool][InCockpit][true]>
-                <[string8][Tags][cockpit pilot rear]>
+                <[string8][Tags][cockpit pilot]>
             >
             <[camera][CameraCockpitOutside][]
                 <[string8][Body][Fuselage]>

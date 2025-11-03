@@ -1,9 +1,9 @@
 <[file][][]
     <[hints][][]
         // Z-526AFS
-        <[float64][MaximumTakeOffMass][740.0]>  
+        <[float64][MaximumTakeOffMass][740.0]>
         <[float64][WingSpan][8.84]>
-        <[float64][WingArea][13.81]> 
+        <[float64][WingArea][13.81]>
         <[float64][HeightOffset][-1.1294]>
         <[float64][ApproachSpeed][40.5]> // 90 km/h
         <[float64][PatternSpeed][46.9]>

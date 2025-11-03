@@ -7,33 +7,46 @@
         <[string8][DisplayNameFull][Zlin Z-526 AFS-V]>
         <[list_localized_text][Descriptions][]
             <[localized_text][element][0]
-                <[string8][Language][en]>
-                <[string8][Text][The Zlin 526 AFS Akrobat Special is a Czech sports plane used in aerobatics. The Z-526 was originally designed by Zlin Aircraft in 1959. Made by Krzysztof Kaniewski. 3D Design: Ivan Smilauer.]>
+                <[string8u][Language][en]>
+                <[string8][Text][The Zlín Z-526 is a Czechoslovakian sports and aerobatic aircraft from the Trenér series. The two-seater versions are nicknamed Trenér Master, while the single-seaters are called Akrobat and Akrobat Spezial. The Z-526 became famous by winning the 1968 Aerobatic World Championship in the individual (Erwin Bläske, GDR) and team (GDR) categories. For Aerofly FS4 by Krzysztof Kaniewski. 3D model created by Ivan Smilauer.]>
             >
             <[localized_text][element][1]
-                <[string8][Language][de]>
+                <[string8u][Language][de]>
                 <[string8][Text][Die Zlín Z-526 ist ein tschechoslowakisches Sport- und Kunstflugzeug der Trenér-Reihe. Die zweisitzigen Ausführungen tragen den Beinamen Trenér Master, die einsitzigen werden als Akrobat und Akrobat Spezial bezeichnet. Bekannt wurde die Z-526 durch den Gewinn der Kunstflug-Weltmeisterschaft 1968 in der Einzel- (Erwin Bläske, DDR) und Mannschaftswertung (DDR). Für Aerofly FS4 von Krzysztof Kaniewski. 3d-Modell erstellt von Ivan Smilauer.]>
 			>
-			<[localized_text][element][2]
+            <[localized_text][element][2]
+                <[string8u][Language][fr]>
+                <[string8][Text][Le Zlín Z-526 est un avion de sport et de voltige tchécoslovaque de la série Trenér. Les versions biplaces sont surnommées Trenér Master, tandis que les monoplaces sont appelées Akrobat et Akrobat Spezial. Le Z-526 s'est fait connaître en remportant le championnat du monde de voltige aérienne en 1968 dans les catégories individuelle (Erwin Bläske, RDA) et par équipe (RDA). Pour Aerofly FS4 par Krzysztof Kaniewski. Modèle 3D créé par Ivan Smilauer.]>
+			>
+            <[localized_text][element][3]
+                <[string8u][Language][es]>
+                <[string8][Text][El Zlín Z-526 es un avión deportivo y acrobático checoslovaco de la serie Trenér. Las versiones biplaza se denominan Trenér Master, mientras que las monoplaza se denominan Akrobat y Akrobat Spezial. El Z-526 se hizo famoso al ganar el Campeonato Mundial de Acrobacia Aérea de 1968 en las categorías individual (Erwin Bläske, RDA) y por equipos (RDA). Para Aerofly FS4, de Krzysztof Kaniewski. Modelo 3D creado por Ivan Smilauer.]>
+			>
+            <[localized_text][element][4]
+                <[string8u][Language][it]>
+                <[string8][Text][Lo Zlín Z-526 è un aereo sportivo e acrobatico cecoslovacco della serie Trenér. I modelli biposto sono denominati Trenér Master, mentre quelli monoposto sono denominati Akrobat e Akrobat Spezial. Lo Z-526 è diventato famoso grazie alla vittoria nel campionato mondiale di acrobazia aerea del 1968 nella classifica individuale (Erwin Bläske, DDR) e a squadre (DDR). Per Aerofly FS4 di Krzysztof Kaniewski. Modello 3D creato da Ivan Smilauer.]>
+			>
+            <[localized_text][element][5]
 				<[string8u][Language][pl]>
                 <[string8][Text][Zlin Z-526 to czechosłowacki samolot sportowy i akrobacyjny z serii Trener. Wersje dwumiejscowe noszą przydomek Trener Master, wersje jednomiejscowe są znane jako Akrobat i Akrobat Spezial. Z-526 stał się sławny dzięki zwycięstwu w Mistrzostwach Świata w Akrobacji Samolotowej w 1968 r. w konkurencji indywidualnej (Erwin Bläske, NRD) i zespołowej (NRD). Dla Aerofly FS4 autorstwa Krzysztofa Kaniewskiego. Model 3D stworzony przez Ivana Smilauera.]>
 			>
         >
-        <[float64][MaximumTakeoffMass][940.0]>  // 740 for acro		
+        <[float64][MaximumTakeoffMass][940.0]>  // 740 for acro
 		<[float64][WingSpan]          [8.84]>
-        <[uint] [Year]                [1959]>
-        <[uint] [UnitsBuilt]          [1400]>		
-        <[uint] [EngineCount]         [1]>
-        <[float64][EnginePower]       [120000.0]>		
+        <[uint32] [Year]                [1959]>
+        <[uint32] [UnitsBuilt]          [1400]>
+        <[uint32] [EngineCount]         [1]>
+        <[float64][EnginePower]       [120000.0]>
 		<[float64][MaximumAirspeed]   [82.5]>
 		<[float64][MinimumAirspeed]   [19.0]>
         <[float64][ApproachAirspeed]  [21.0]>
         <[float64][CruiseAirspeed]    [56.0]>
         <[float64][MaximumAltitude]   [5800.0]>
         <[float64][CruiseAltitude]    [1826.0]>
-        <[float64][MaximumRange]      [750000.0]>	
-		<[tmvector2d][NormalAirspeedRange] [ 19.0 62.0 ]>
-		<[tmvector2d][CautionAirspeedRange][ 62.0 82.5 ]>		
+        <[float64][MaximumRange]      [750000.0]>
+        <[vector2_float64][FlapAirspeedRange]   [ 0.0  0.0  ]>
+        <[vector2_float64][NormalAirspeedRange] [ 19.0 62.0 ]>
+        <[vector2_float64][CautionAirspeedRange][ 62.0 82.5 ]>
         <[string8][Tags][ airplane general_aviation aerobatic piston tailgear retractable_gear ]>
         <[string8][Pilot][pilot_jason]>
     >
