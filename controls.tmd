@@ -1,8 +1,8 @@
 <[file][][]
     <[modelmanager][][]
         <[pointer_list_tmcontrol][ControlObjects][]
-        
-            // barometer_setting    
+
+            // barometer_setting
             <[control_cylinder][PressureSetting][]
                 <[string8][Type][knob]>
                 <[vector3_float64][R0][ -0.9461 0.1348 0.2674 ]>
@@ -75,18 +75,18 @@
                     <[float64][Value][0.0004]>
                 >
                 <[float64][Radius][0.0203]>
-            >            
+            >
             // throttle lever
             <[control_input][ThrottleLeverInput][]
                 <[uint32][InputID][ServoThrottle.Output]>
-                <[float64][Scaling][0.419053]>                                    
-                <[float64][Offset][0.012392]>                    
+                <[float64][Scaling][0.419053]>
+                <[float64][Offset][0.012392]>
             >
             <[control_rotation][ThrottleLeverTransform][]
                 <[string8][Input][ThrottleLeverInput.Output]>
                 <[tmvector3d][Axis][ 0.0 1.0 0.0 ]>
                 <[tmvector3d][Pivot][-1.2525 0.2567 -0.1907]>
-            >            
+            >
             <[control_cylinder][ThrottleLever][]
                 <[string8][Type][lever]>
                 <[vector3_float64][R0][ -1.317 0.2567 0.1190 ]>
@@ -105,14 +105,14 @@
             // mixture lever
             <[control_input][MixtureLeverInput][]
                 <[uint32][InputID][ServoMixture.Output]>
-                <[float64][Scaling][-0.313112]>                                    
-                <[float64][Offset][0.313112]>                
+                <[float64][Scaling][-0.313112]>
+                <[float64][Offset][0.313112]>
             >
             <[control_rotation][MixtureLeverTransform][]
                 <[string8][Input][MixtureLeverInput.Output]>
                 <[tmvector3d][Axis][ 0.0 -1.0 0.0 ]>
                 <[tmvector3d][Pivot][-1.2506 0.2748 -0.2696]>
-            >            
+            >
             <[control_sphere][MixtureLever][]
                 <[string8][Type][lever]>
                 <[vector3_float64][R0][ -1.193 0.2748 0.0886 ]>
@@ -127,7 +127,7 @@
                 >
                 <[float64][Radius][0.0121]>
             >
-            // elevator trim wheel 
+            // elevator trim wheel
             <[control_cylinder][TrimWheel][]
                 <[string8][Type][wheel]>
                 <[vector3_float64][R0][-1.379 0.2792 -0.0411]>
@@ -142,7 +142,7 @@
                 <[float64][Radius][0.029]>
                 <[float64][Length][0.021]>
             >
-            // rudder trim wheel 
+            // rudder trim wheel
             <[control_cylinder][RudderTrimWheel][]
                 <[string8][Type][wheel]>
                 <[vector3_float64][R0][-1.576 0.2665 -0.0987]>
@@ -156,8 +156,8 @@
                 >
                 <[float64][Radius][0.0232]>
                 <[float64][Length][0.0171]>
-            >    
-            
+            >
+
         >
     >
 >

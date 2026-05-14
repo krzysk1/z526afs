@@ -4,7 +4,7 @@
     // Plane: Zlin 526 AFS-V Akrobat Special
     // Compilation: Krzysztof Kaniewski
     // 3D Design: 2011 Ivan Smilauer (XP)
-    // Aircraft files are freeware in the sense that you are free to download, copy and redistribute them for personal and non-commercial purposes, provided that this copyright notice is retained in the copy. 
+    // Aircraft files are freeware in the sense that you are free to download, copy and redistribute them for personal and non-commercial purposes, provided that this copyright notice is retained in the copy.
     // You are not allowed to use these files or parts thereof in a commercial product without the author(s) consent.
     // Date: Sun Aug 10 2014; June 2019; Aug 2020
     //-------------------------------------
@@ -13,7 +13,11 @@
         <[pointer_list_tmuniverse][DynamicObjects][]
             <[telemetry][Telemetry][]
                 <[string8][Body][Fuselage]>
-                <[tmvector3d][LookAtPosition][ -0.8 0.0 0.0 ]>
+                <[tmvector3d][LookAtPosition][ -0.736 0.000 -0.140 ]>
+            >
+            <[sender][SenderMass][]
+                <[string8][Input][658.0]>
+                <[string8][Message][Aircraft.Mass]>
             >
 
             // Cameras
@@ -75,7 +79,7 @@
                 <[string8][Tags][fuselage wing right]>
             >
 
-            // Rigidbodies mass: 658.0 ( -0.736 0.000 -0.140)
+            // Rigidbodies
 
             <[rigidbody][Fuselage][]
                 <[float64][Mass][459.0]>
@@ -1089,11 +1093,8 @@
                 <[string8][Input][Altimeter.PressureAltitude]>
                 <[string8][Message][Aircraft.Altitude]>
             >
-            <[input_default][PressureSettingInput][]
+            <[input_pressure_setting][PressureSettingInput][]
                 <[string8][Message][PressureSetting]>
-                <[uint][Positions][201]>
-                <[tmvector2d][Range][ 95000.0 105000.0]>
-                <[float64][Value][101325.0]>
             >
             <[output][AltimeterSetting][]
                 <[string8][Input][PressureSettingInput.Output]>
@@ -3806,7 +3807,22 @@
                 <[uint32][VelocityID][Fuselage.V]>
                 <[string8][SoundFile][roll_runway.wav]>
             >
+			// avionics sound
+            <[soundinput][AvionicsOnInput][]
+                <[uint32][InputID][AvionicsMasterSwitch.Output]>
+            >
+            <[soundmapping][AvionicsVolume][]
+                <[string8][Input][AvionicsOnInput.Output]>
+                <[tmvector2d][Map][ (0.0 0.0) (1.0 0.2) ]>
+            >
+            <[soundloop][AvionicsLoopIntern][]
+                <[string8][InputVolume][AvionicsVolume.Output]>
+                <[string8][InputPitch][1.0]>
+                <[uint32][PositionID][Fuselage.R]>
+                <[uint32][VelocityID][Fuselage.V]>
+                <[string8][SoundFile][avionics.wav]>
+                <[bool][External][false]>
+            >
         >
     >
 >
-
