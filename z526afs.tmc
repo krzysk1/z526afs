@@ -48,7 +48,7 @@
         <[vector2_float64][FlapAirspeedRange]   [ 0.0  0.0  ]>
         <[vector2_float64][NormalAirspeedRange] [ 19.0 62.0 ]>
         <[vector2_float64][CautionAirspeedRange][ 62.0 82.5 ]>
-        <[string8][Tags][ airplane general_aviation aerobatic piston tailgear retractable_gear ]>
+        <[string8][Tags][ airplane piston general_aviation aerobatic tailgear retractable_gear ]>
         <[string8][Pilot][pilot_jason]>
     >
 >
